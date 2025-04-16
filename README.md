@@ -1,4 +1,4 @@
-# SleepSoundModel - Trim and Remove Silence
+# Audio File Preperation for Create ML - Trim and Remove Silence
 
 This project processes audio files by trimming silence and splitting them into smaller segments for use in machine learning models like CreateML.
 
