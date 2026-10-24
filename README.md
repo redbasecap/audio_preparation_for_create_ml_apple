@@ -16,14 +16,18 @@ This project processes audio files by trimming silence and splitting them into s
    ```
 2. Install dependencies:
    ```bash
+   cd audio_preparation_for_create_ml_apple
    pip install -r requirements.txt
    ```
+3. For MP3, M4A, FLAC and OGG input, install [FFmpeg](https://ffmpeg.org/) (e.g. `brew install ffmpeg`). WAV input works without it.
 
 ## Usage
 Run the script with the path to your audio file:
 ```bash
 python main.py input.mp3
 ```
+
+Segments of 0.975 s are written to `output/` as `<name>_001.wav`, `<name>_002.wav`, ...
 
 ## About Apple CreateML
 This tool is designed to simplify the preparation of audio datasets for use with [Apple CreateML](https://developer.apple.com/machine-learning/create-ml/). CreateML is a powerful framework by Apple that allows developers to build and train machine learning models directly on macOS.
